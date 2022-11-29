@@ -3,19 +3,19 @@
 
 import random
 
-# Zeichen die verwendet werden sollen
+# Characters to be used
 zeichen = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
 
-# Passwortlänge
+# Length
 laenge = 32
 
-# Passwort generieren
+# Generate password
 passwort = "".join(random.sample(zeichen, laenge))
 
-# Passwort ausgeben
+# Password output
 print(passwort)
 
-# Passwort in Datei schreiben
+# Password output to file
 datei = open("Passwort.txt", "w")
 datei.write (passwort)
 datei.close()                                   
