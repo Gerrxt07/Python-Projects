@@ -4,7 +4,7 @@
 import random
 
 # Characters to be used
-zeichen = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
+zeichen = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+."
 
 # Length
 laenge = 32
@@ -17,5 +17,5 @@ print(passwort)
 
 # Password output to file
 datei = open("Passwort.txt", "w")
-datei.write (passwort)
+datei.write(passwort)
 datei.close()                                   
