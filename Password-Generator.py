@@ -4,18 +4,18 @@
 import random
 
 # Characters to be used
-zeichen = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+."
+characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+."
 
 # Length
-laenge = 32
+length = 32
 
 # Generate password
-passwort = "".join(random.sample(zeichen, laenge))
+password = "".join(random.sample(characters, length))
 
 # Password output
-print(passwort)
+print(password)
 
 # Password output to file
-datei = open("Passwort.txt", "w")
-datei.write(passwort)
+datei = open("Password.txt", "w")
+datei.write(password)
 datei.close()                                   
