@@ -1,13 +1,13 @@
 # Passwort Generator by Gerrxt
-# Version: 1.0
+# Version: 1.1
 
 import random
 
 # Characters to be used
-characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+."
+characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-_."
 
 # Length
-length = 32
+length = 16
 
 # Generate password
 password = "".join(random.sample(characters, length))
@@ -16,6 +16,6 @@ password = "".join(random.sample(characters, length))
 print(password)
 
 # Password output to file
-datei = open("Password.txt", "w")
+datei = open("password.txt", "w")
 datei.write(password)
 datei.close()                                   
